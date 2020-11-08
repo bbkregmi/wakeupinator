@@ -12,10 +12,10 @@ export class AppComponent implements OnInit {
   wakeUpTime: any;
 
   coefficients = {
-    INTERCEPT: 749.1144, // no value
-    MONTH: 15.6278, // values are 1 - 12
-    DAY_NUMBER: -0.5863, // values are 1 - 365
-    DAY: 11.8238, // Value will be 1 for saturday, or 2 for sunday
+    INTERCEPT: 758.6781, // no value
+    MONTH: -0.4649, // values are 1 - 12
+    DAY_NUMBER: -0.0632, // values are 1 - 365
+    DAY: 2.8124, // Value will be 1 for saturday, or 2 for sunday
   };
 
   isNightModeEnabled = false;

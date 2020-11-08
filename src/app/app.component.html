@@ -1,0 +1,21 @@
+<nav>
+  <span class="header"> The Wake-up-inator</span>
+</nav>
+
+<div class="main-body">
+  <div>
+    <img src="assets/ahmed.png">
+  </div>
+    <mat-form-field appearance="fill" class="margin-10">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [formControl]="formControl" [matDatepickerFilter]="weekendsOnlyFilter" [matDatepicker]="picker" (ngModelChange)="onDateChange()">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <div class="margin-10">
+      <div class="header">Ahmed shall wake up at</div>
+      <div class="header">{{wakeUpTime}}</div>
+    </div>
+</div>
+
+
